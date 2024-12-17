@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(186, 183, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .toggle-btn {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  body.dark {
+    background-color: #2c2c2c;
+  }
+  
+  body.dark .toggle-btn {
+    background-color: gray;
+  }
+  
+  body.dark .circle {
+    transform: translateX(50px);
+    background-color: rgba(0, 0, 0, 0.723);
+  }
+  
